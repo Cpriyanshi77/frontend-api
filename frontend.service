@@ -1,0 +1,13 @@
+[Unit]
+Description=OT-MICROSERVICES Frontend ReactJS Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/frontend
+ExecStart=/usr/bin/serve -s build
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
