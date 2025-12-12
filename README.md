@@ -1,6 +1,5 @@
 <img width="372" height="306" alt="image" src="https://github.com/user-attachments/assets/4c4d0357-03af-4d61-8de5-4d05a8baec02" />
 
-
 # POC of OT-MICROSERVICES Frontend
 
 ---
