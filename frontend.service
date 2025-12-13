@@ -3,10 +3,12 @@ Description=OT-MICROSERVICES Frontend ReactJS Service
 After=network.target
 
 [Service]
-User=ubuntu
-WorkingDirectory=/home/ubuntu/frontend
-ExecStart=/usr/bin/serve -s build
-Restart=on-failure
+Type=simple
+User=buildpiper
+WorkingDirectory=/home/buildpiper/frontend
+ExecStart=/usr/bin/serve -s build -l tcp://0.0.0.0:3000
+Restart=always
+Environment=NODE_ENV=production
 
 [Install]
 WantedBy=multi-user.target

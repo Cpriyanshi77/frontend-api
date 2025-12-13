@@ -9,7 +9,7 @@ class ListSalary extends React.Component {
 	}
 
 	loadData() {
-		fetch('http://lb-test-1996005186.ap-south-1.elb.amazonaws.com:8081/api/v1/salary/search/all')
+		fetch('http://localhost:8081/api/v1/salary/search/all')
 			.then(response => response.json())
 			.then(data => {
 				this.setState({data: data })

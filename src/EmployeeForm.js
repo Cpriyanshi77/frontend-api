@@ -137,7 +137,7 @@ const FormikApp = withFormik({
     return { username, password }
   },
   handleSubmit(values, { props, resetForm, setErrors, setSubmitting }) {
-    fetch('http://lb-test-1996005186.ap-south-1.elb.amazonaws.com:8080/api/v1/employee/create', {
+    fetch('http://localhost:8080/api/v1/employee/create', {
       method: 'POST',
       body: JSON.stringify(values),
       headers: {
